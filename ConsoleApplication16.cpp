@@ -49,13 +49,13 @@ public:
     }
 
     void Show() const {
-        cout << "Ìîäåëü ïîòÿãà: " << model << endl;
-        cout << "Ê³ëüê³ñòü âàãîí³â: " << vagonCount << endl;
+        cout << "ÐœÐ¾Ð´ÐµÐ»ÑŒ Ð¿Ð¾Ñ‚ÑÐ³Ð°: " << model << endl;
+        cout << "ÐšÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð²Ð°Ð³Ð¾Ð½Ñ–Ð²: " << vagonCount << endl;
 
         for (int i = 0; i < vagonCount; i++) {
-            cout << "Âàãîí ¹" << vagon[i].number
-                << " | Ì³ñöü: " << vagon[i].seats
-                << " | Ïàñàæèð³â: " << vagon[i].passengers << endl;
+            cout << "Ð’Ð°Ð³Ð¾Ð½ â„–" << vagon[i].number
+                << " | ÐœÑ–ÑÑ†ÑŒ: " << vagon[i].seats
+                << " | ÐŸÐ°ÑÐ°Ð¶Ð¸Ñ€Ñ–Ð²: " << vagon[i].passengers << endl;
         }
     }
 
@@ -82,12 +82,12 @@ public:
                     vagon[i].passengers++;
                 }
                 else {
-                    cout << "Âàãîí çàïîâíåíèé!" << endl;
+                    cout << "Ð’Ð°Ð³Ð¾Ð½ Ð·Ð°Ð¿Ð¾Ð²Ð½ÐµÐ½Ð¸Ð¹!" << endl;
                 }
                 return;
             }
         }
-        cout << "Âàãîí íå çíàéäåíî!" << endl;
+        cout << "Ð’Ð°Ð³Ð¾Ð½ Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾!" << endl;
     }
 };
 
@@ -99,7 +99,7 @@ int main() {
 
     t1.Show();
 
-    cout << "\nÊîï³ÿ ïîòÿãà:\n";
+    cout << "\nÐšÐ¾Ð¿Ñ–Ñ Ð¿Ð¾Ñ‚ÑÐ³Ð°:\n";
     Train t2 = t1;
     t2.Show();
 
